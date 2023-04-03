@@ -1,4 +1,3 @@
-
 function sideBarFunc() {
   //! home sidebar start
   const btnOpenSidebar = document.querySelector("#btn-menu");
@@ -8,8 +7,6 @@ function sideBarFunc() {
     sidebar.style.left = "0";
   });
 
-
-  
   btnCloseSidebar.addEventListener("click", function () {
     sidebar.style.left = "-100%";
   });
@@ -32,8 +29,6 @@ function searchModelFunc() {
   const btnCloseSearch = document.getElementById("close-search");
   const modalSearch = document.getElementsByClassName("modal-search");
   const modalSearchWrapper = document.getElementsByClassName("modal-wrapper");
-
-
 
   btnOpenSearch.addEventListener("click", function () {
     modalSearch[0].style.visibility = "visible";
@@ -60,7 +55,7 @@ function searchModelFunc() {
   //! search modal end
 }
 
-export default function(){
-        sideBarFunc();
-    searchModelFunc();
+export default function () {
+  sideBarFunc();
+  searchModelFunc();
 }
