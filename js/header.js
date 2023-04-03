@@ -8,6 +8,8 @@ function sideBarFunc() {
     sidebar.style.left = "0";
   });
 
+
+  
   btnCloseSidebar.addEventListener("click", function () {
     sidebar.style.left = "-100%";
   });
@@ -22,7 +24,6 @@ function sideBarFunc() {
     }
   });
   /* click outside end */
-
   //! home sidebar end
 }
 function searchModelFunc() {
@@ -33,7 +34,7 @@ function searchModelFunc() {
   const modalSearchWrapper = document.getElementsByClassName("modal-wrapper");
 
 
-  
+
   btnOpenSearch.addEventListener("click", function () {
     modalSearch[0].style.visibility = "visible";
     modalSearch[0].style.opacity = "1";
